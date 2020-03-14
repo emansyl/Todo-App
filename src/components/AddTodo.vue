@@ -8,7 +8,7 @@
 </template>
 
 <script>
-//import uuid from 'uuid';
+
 export default {
     name: "AddTodo",
     data() {
@@ -19,9 +19,8 @@ export default {
     methods: {
         addTodo(e) {
             e.preventDefault();
-            //console.log(123)
+        
             const newTodo = {
-                id: Math.random(),
                 title: this.title,
                 completed: false
             }
